@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            >
+            <TextView
+                android:id="@+id/receive_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                tools:text="호신건설 사이트 메인페이지 시안"
+
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="27dp"
+                android:layout_marginStart="20dp"
+
+                />
+            <TextView
+                android:id="@+id/receive_company_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:text="@string/user_company"
+                android:textSize="14dp"
+                android:textColor="@color/warm_grey"
+
+                app:layout_constraintStart_toStartOf="@+id/receive_title"
+                app:layout_constraintTop_toBottomOf="@+id/receive_title"
+                app:layout_constraintRight_toLeftOf="@+id/receive_division"
+                />
+            <TextView
+                android:id="@+id/receive_division"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:text=" | "
+                android:textColor="@color/warm_grey"
+
+                app:layout_constraintTop_toBottomOf="@+id/receive_title"
+                app:layout_constraintLeft_toRightOf="@+id/receive_company_tv"
+                app:layout_constraintRight_toLeftOf="@+id/receive_name_tv"
+                />
+            <TextView
+                android:id="@+id/receive_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:text="@string/position"
+                android:textColor="@color/warm_grey"
+
+                app:layout_constraintTop_toBottomOf="@+id/receive_title"
+                app:layout_constraintLeft_toRightOf="@+id/receive_division"
+                />
+            <TextView
+                android:id="@+id/receive_start_day_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:text="@string/start_day"
+                android:textSize="14dp"
+                android:textColor="@color/warm_grey"
+
+                app:layout_constraintStart_toStartOf="@+id/receive_title"
+                app:layout_constraintTop_toBottomOf="@+id/receive_division"
+                app:layout_constraintRight_toLeftOf="@+id/receive_division2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="22dp"
+                />
+            <TextView
+                android:id="@+id/receive_division2"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:text=" | "
+                android:textColor="@color/warm_grey"
+
+                app:layout_constraintTop_toBottomOf="@+id/receive_division"
+                app:layout_constraintLeft_toRightOf="@+id/receive_start_day_tv"
+                app:layout_constraintRight_toLeftOf="@+id/receive_end_day_tv"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                />
+            <TextView
+                android:id="@+id/receive_end_day_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:text="@string/deadline_date"
+                android:textColor="@color/warm_grey"
+
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintTop_toBottomOf="@+id/receive_division"
+                app:layout_constraintLeft_toRightOf="@+id/receive_division2"
+                app:layout_constraintTop_toTopOf="@+id/receive_division2"
+                app:layout_constraintBottom_toBottomOf="@+id/receive_division2"
+                />
+            <ImageView
+                android:id="@+id/receive_circle"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/ic_circle_unapproved"
+                android:visibility="visible"
+
+                app:layout_constraintBottom_toBottomOf="@+id/receive_end_day_tv"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                android:layout_marginRight="6dp"
+                app:layout_constraintHorizontal_chainStyle="packed"
+
+                />
+            <TextView
+                android:id="@+id/approval_state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/greyish_brown"
+                android:text="미확인"
+                android:visibility="visible"
+
+
+                app:layout_constraintBottom_toBottomOf="@+id/receive_circle"
+                app:layout_constraintTop_toTopOf="@+id/receive_circle"
+                app:layout_constraintLeft_toRightOf="@+id/receive_circle"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

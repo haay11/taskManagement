@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">TaskManagement</string>
+    <string name="sign_in">로그인</string>
+    <string name="sign_in_title">업무지시 로그인</string>
+    <string name="input_email">이메일 입력</string>
+    <string name="pw">비밀번호</string>
+    <string name="id_hint">abc@oq-fi.com의 형태</string>
+    <string name="pw_hint">6자리 이상</string>
+    <string name="find_account_tv">ID/PW 찾기</string>
+    <string name="sign_up">회원 가입</string>
+    <string name="ch_pw_hint">비밀 번호 확인</string>
+    <string name="user_name">성명</string>
+    <string name="user_name_hint">2~12자</string>
+    <string name="user_company">업체</string>
+    <string name="user_company_hint">업체명</string>
+    <string name="department">부서 </string>
+    <string name="department_hint">부서명</string>
+    <string name="position">직책</string>
+    <string name="position_hint">직책명</string>
+    <string name="save_btn">저장</string>
+    <string name="cancel_btn">취소</string>
+    <string name="find_account_btn">계정 찾기</string>
+    <string name="find_account_hint">이메일 입력</string>
+    <string name="task_generation">업무생성</string>
+    <string name="business_order_box">업무지시함</string>
+    <string name="processing_status">처리현황</string>
+    <string name="sign_up_btn">가입</string>
+    <string name="email_check_btn">인증</string>
+    <string name="warning_email_check">이메일을 인증해 주세요.</string>
+    <string name="warning_pw">비밀번호는 6자 이상 입력해 주세요.</string>
+    <string name="warning_pw_check">입력하신 비밀번호와 동일하게 입력해 주세요.</string>
+    <string name="publisher_tv">발행자</string>
+    <string name="receiver_tv">수령자</string>
+    <string name="instruction_title">지시사항 제목</string>
+    <string name="instruction_contents">지시 내용</string>
+    <string name="deadline_date">마감일</string>
+    <string name="start_day">시작일</string>
+    <string name="business_handling_box_title">업무처리함</string>
+    <string name="receive_business">업무수신함</string>
+    <string name="return_btn">반려</string>
+    <string name="hold_btn">보류</string>
+    <string name="approval_btn">승인</string>
+    <string name="return_reason">사유</string>
+    <string name="hold_reason">보류사유</string>
+    <string name="check_btn">확인</string>
+    <string name="selectDeadline">마감일 선택</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--firebase login-->
+    <string name="success_login">로그인 성공</string>
+    <string name="failed_login">로그인 실패</string>
+    <string name="success_signup">회원가입 성공</string>
+    <string name="failed_signup">회원가입 실패</string>
+
+</resources>

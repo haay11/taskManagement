@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <include layout="@layout/toolbar_layout">
+        <ImageView
+            android:id="@+id/icon_bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bell"
+
+            />
+    </include>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:background="@color/pale_grey"
+        app:tabTextColor="@color/cool_grey"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabSelectedTextColor="@color/purpleish_blue"
+        app:tabIndicatorColor="@color/purpleish_blue"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_order_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/order_box_create_task"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginBottom="0dp"
+        android:background="@color/purpleish_blue"
+        >
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="19dp"
+            android:src="@drawable/ic_add_white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white_two"
+            android:text="@string/task_generation"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taskmanagement">
+    
+    <permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/CustomAppBarTheme">
+        <activity android:name=".signin.SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".createbusiness.CreateNewBusinessActivity"/>
+        <activity android:name=".businessorder.BusinessOrderActivity"/>
+        <activity android:name=".signup.SignUpActivity"/>
+        <activity android:name=".findaccount.FindAccountActivity"/>
+        <activity android:name=".reasonpopup.ReasonPopupActivity"
+            android:theme="@style/Theme.Transparent" android:screenOrientation="portrait"/>
+        <activity android:name=".processingstatus.ProcessingStatusActivity"/>
+        <activity android:name=".receivebusiness.ReceiveBusinessActivity"
+            android:theme="@style/CustomAppBarTheme"/>
+        <activity android:name=".calendar.CalendarActivity" android:theme="@style/Transparent"/>
+        <activity android:name=".main.MainActivity"/>
+        <activity android:name=".businessorder.BusinessOrderCheckActivity"/>
+
+
+
+    </application>
+
+</manifest>
