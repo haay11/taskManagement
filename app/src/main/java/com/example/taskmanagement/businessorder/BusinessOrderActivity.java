@@ -75,9 +75,10 @@ public class BusinessOrderActivity extends AppCompatActivity {
         toolbarTv = findViewById(R.id.toolbar_title);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbarTv.setVisibility(View.INVISIBLE);
         toolbarImg.setVisibility(View.VISIBLE);
+        toolbarTv.setText("업무함");
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

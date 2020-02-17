@@ -72,6 +72,7 @@ public class BusinessOrderCheckActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         publisherName = findViewById(R.id.publisher_name);
         receiverName = findViewById(R.id.receiver_name);
@@ -294,10 +295,6 @@ public class BusinessOrderCheckActivity extends AppCompatActivity {
     }
     public void checkButton(){
         if ((box == 0)&&uid.equals(pUid)&&approvalStateTv.equals("미확인")){
-            businessOrderApprovalBtn.setVisibility(View.GONE);
-            businessOrderHoldBtn.setVisibility(View.GONE);
-            businessOrderReturnBtn.setVisibility(View.GONE);
-            businessOrderReasonBtn.setVisibility(View.GONE);
             businessOrderReasonBtn.setVisibility(View.GONE);
         } else if ((box == 0)&&uid.equals(pUid)&&approvalStateTv.equals("승인")){
             switch (status){

@@ -47,7 +47,6 @@ public class CalendarActivity extends AppCompatActivity implements RobotoCalenda
         // Gets the calendar from the view
         robotoCalendarView = findViewById(R.id.robotoCalendarPicker);
 
-
         calCheck = findViewById(R.id.cal_check);
         calCancel = findViewById(R.id.cal_cancel);
 
